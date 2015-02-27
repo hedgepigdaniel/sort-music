@@ -7,6 +7,7 @@ path = require 'path'
 Commander
 	.usage '[options] <file ...>'
 	.option('-d, --dest <dest>', 'Destination directory')
+	.option('-m, --move', 'Move each track to destination directory instead of making a copy')
 	.parse process.argv
 
 processInputPath = (sourcePath, callback) =>
